@@ -6,17 +6,39 @@
 
 // ***** BEGIN STACKING WORDS ***** //
 
+// let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
+
+// function addExcitement (theWordArray) {
+//     let buildMeUp = ""
+
+//     for (let i = 0; i < theWordArray.length; i++) {
+//         buildMeUp += theWordArray[i] + " ";
+//         console.log(buildMeUp) 
+//         }
+//         //    Print buildMeUp to the console  
+//     }
+
+// addExcitement(sentence)
+
+// ***** BEGIN SOME WORDS ARE MORE EXCITING THAN OTHERS *****//
+
 let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
 
 function addExcitement (theWordArray) {
     let buildMeUp = ""
 
     for (let i = 0; i < theWordArray.length; i++) {
-        buildMeUp += theWordArray[i] + " ";
-        console.log(buildMeUp) 
+        if ((i + 1) % 3 === 0) {
+            buildMeUp += ` ${theWordArray[i]}!`
+        } else {
+            buildMeUp += ` ${theWordArray[i]}`
         }
         //    Print buildMeUp to the console  
+        console.log(buildMeUp) 
     }
+}
 
 addExcitement(sentence)
+
+
 
