@@ -22,14 +22,38 @@
 
 // ***** BEGIN SOME WORDS ARE MORE EXCITING THAN OTHERS *****//
 
+// let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
+
+// function addExcitement (theWordArray) {
+//     let buildMeUp = ""
+
+//     for (let i = 0; i < theWordArray.length; i++) {
+//         if ((i + 1) % 3 === 0) {
+//             buildMeUp += ` ${theWordArray[i]}!`
+//         } else {
+//             buildMeUp += ` ${theWordArray[i]}`
+//         }
+//         //    Print buildMeUp to the console  
+//         console.log(buildMeUp) 
+//     }
+// }
+
+// addExcitement(sentence)
+
+// ***** BEGIN FUNCTION ARGUMENTS ***** //
+
+// The learning objective of this exercise is to practice defining and using function arguments.
+
+// Add a new argument to the function so that a developer can specify which character should be displayed instead of it always being an exclamation point.
+
 let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
 
-function addExcitement (theWordArray) {
+function addExcitement (theWordArray, punctuation) {
     let buildMeUp = ""
 
     for (let i = 0; i < theWordArray.length; i++) {
         if ((i + 1) % 3 === 0) {
-            buildMeUp += ` ${theWordArray[i]}!`
+            buildMeUp += ` ${theWordArray[i]} ${punctuation}`
         } else {
             buildMeUp += ` ${theWordArray[i]}`
         }
@@ -38,7 +62,7 @@ function addExcitement (theWordArray) {
     }
 }
 
-addExcitement(sentence)
-
+// I want to use a question mark
+addExcitement(sentence, "?")
 
 
