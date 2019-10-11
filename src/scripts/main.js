@@ -1,35 +1,22 @@
-// For this exercise, you need to create a single JavaScript function named addExcitement that will use console.log() to print out a sentence to the browser console.
+// The learning objective of this exercise is to use the JavaScript if statement inside a loop to do one operation when a certain conditions is true, and a different operation if that condition is false.
 
-// Create an array that contains the words in the sentence
+// Add logic to addExcitement that places an exclamation point (!) after every third word. Read the following English statement and write the equivalent in JavaSript code to make it work.
+
+// If the current value of the counter variable can be evenly divided by 3 (using the JavaScript remainder operator) add a single exclamation point (!) to the current word in the array.
+
+// ***** BEGIN STACKING WORDS ***** //
+
 let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
 
-/*
-    The addExcitement function should be an impure function, and accept
-    the array as the sole argument. It should iterate over the array
-    and output the words to the browser console.
-*/
-function addExcitement (sentence) {
-
-    // Each time the for loop executes, you're going to add one more word to this string
+function addExcitement (theWordArray) {
     let buildMeUp = ""
 
-    for (let i = 0; i < sentence.length; i++) {
-        // Concatenate the new word onto buildMeUp
-        sentence.forEach(word => {
-           word += buildMeUp
-        })
-        // Print buildMeUp to the console
-        console.log(buildMeUp)
+    for (let i = 0; i < theWordArray.length; i++) {
+        buildMeUp += theWordArray[i] + " ";
+        console.log(buildMeUp) 
+        }
+        //    Print buildMeUp to the console  
     }
-}
 
-// Invoke the function and pass in the array
 addExcitement(sentence)
-
-
-
-
-
-
-
 
