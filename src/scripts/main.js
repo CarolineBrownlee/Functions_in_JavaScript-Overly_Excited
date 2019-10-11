@@ -46,14 +46,37 @@
 
 // Add a new argument to the function so that a developer can specify which character should be displayed instead of it always being an exclamation point.
 
+// let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
+
+// function addExcitement (theWordArray, punctuation) {
+//     let buildMeUp = ""
+
+//     for (let i = 0; i < theWordArray.length; i++) {
+//         if ((i + 1) % 3 === 0) {
+//             buildMeUp += ` ${theWordArray[i]} ${punctuation}`
+//         } else {
+//             buildMeUp += ` ${theWordArray[i]}`
+//         }
+//         //    Print buildMeUp to the console  
+//         console.log(buildMeUp) 
+//     }
+// }
+
+// // I want to use a question mark
+// addExcitement(sentence, "?")
+
+// ***** BEGIN MULTIPLE PUNCTUATION CHALLENGE ***** //
+
+// Add a new argument to the function so that a developer can specify how many times the special character should be added.
+
 let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
 
-function addExcitement (theWordArray, punctuation) {
+function addExcitement (theWordArray, punctuation, times) {
     let buildMeUp = ""
 
     for (let i = 0; i < theWordArray.length; i++) {
         if ((i + 1) % 3 === 0) {
-            buildMeUp += ` ${theWordArray[i]} ${punctuation}`
+            buildMeUp += ` ${theWordArray[i]} ${punctuation.repeat(times)}`
         } else {
             buildMeUp += ` ${theWordArray[i]}`
         }
@@ -62,7 +85,7 @@ function addExcitement (theWordArray, punctuation) {
     }
 }
 
-// I want to use a question mark
-addExcitement(sentence, "?")
+// I want to use a 4 asterisks
+addExcitement(sentence, "*", 4)
 
 
